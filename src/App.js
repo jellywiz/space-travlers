@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="space-travlers/" element={<Rockets />} />
+        <Route path="space-travlers/missions" element={<Missions />} />
+        <Route path="space-travlers/profile" element={<Profile />} />
       </Routes>
     </div>
   );

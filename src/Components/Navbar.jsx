@@ -16,7 +16,7 @@ function Navbar() {
       <div className="Nav-List">
         <NavLink
           className="Nav-Item"
-          to="/"
+          to="space-travlers/"
           style={({ isActive }) =>
             isActive ? { color: 'black' } : { color: 'blue' }
           }
@@ -25,7 +25,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           className="Nav-Item"
-          to="/missions"
+          to="space-travlers/missions"
           style={({ isActive }) =>
             isActive ? { color: 'black' } : { color: 'blue' }
           }
@@ -35,7 +35,7 @@ function Navbar() {
         <h1>|</h1>
         <NavLink
           className="Nav-Item"
-          to="/profile"
+          to="space-travlers/profile"
           style={({ isActive }) =>
             isActive ? { color: 'black' } : { color: 'blue' }
           }
