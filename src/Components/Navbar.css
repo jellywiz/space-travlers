@@ -1,1 +1,35 @@
 /* stylelint-disable-next-line no-empty-source */
+.Navbar {
+  padding: 0.5rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Logo-Container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.Logo {
+  height: 100px;
+  width: 100px;
+}
+
+.Nav-List {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.Nav-Item {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Nav-Item:active {
+  color: black;
+}
