@@ -1,12 +1,12 @@
-/* eslint-disable no-unused-vars */
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import { configureStore, applyMiddleware, combineReducers } from '@reduxjs/toolkit';
+import ReduxThunk from 'redux-thunk';
 
-const bookReducers = combineReducers({
-  //
+import rocketsReducer from './Rockets/rocketsReducer';
+
+const rocketRootReducer = combineReducers({
+  rockets: rocketsReducer,
 });
 
-const store = configureStore({
-  // reducers
-});
+const store = configureStore({ reducer: rocketRootReducer }, applyMiddleware(ReduxThunk));
 
 export default store;

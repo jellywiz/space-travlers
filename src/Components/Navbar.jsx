@@ -11,7 +11,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="Logo-Container">
         <img className="Logo" src={Logo} alt="" />
-        <h1>Space Travlers&#180; Hub</h1>
+        <h1>Space Travelers&#180; Hub</h1>
       </div>
       <div className="Nav-List">
         <NavLink
