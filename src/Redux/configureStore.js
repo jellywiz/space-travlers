@@ -1,12 +1,12 @@
-/* eslint-disable no-unused-vars */
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import missionsReducer from './Missions/Missions';
 
-const bookReducers = combineReducers({
-  //
+const spaceReducer = combineReducers({
+  Missions: missionsReducer,
 });
 
 const store = configureStore({
-  // reducers
+  reducer: spaceReducer,
 });
 
 export default store;

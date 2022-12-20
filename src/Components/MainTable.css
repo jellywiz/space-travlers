@@ -1,0 +1,23 @@
+.Odd {
+  border: 10px solid #d1d5d8;
+  background-color: #f2f2f2;
+}
+
+.Even {
+  background-color: #fff;
+  border: 1px solid #d1d5d8;
+}
+
+.justify {
+  text-justify: inter-word;
+  text-align: left;
+  padding: 0.8rem;
+}
+
+.Active-Member {
+  background-color: #ddebe3;
+}
+
+.Inactive-Member {
+  background-color: #ebcacd;
+}
