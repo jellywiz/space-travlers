@@ -1,6 +1,3 @@
-/* eslint-disable no-confusing-arrow */
-/* eslint-disable react/jsx-curly-newline */
-/* eslint-disable implicit-arrow-linebreak */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../Img/planet.png';
@@ -16,29 +13,23 @@ function Navbar() {
       <div className="Nav-List">
         <NavLink
           className="Nav-Item"
-          to="/"
-          style={({ isActive }) =>
-            isActive ? { color: 'black' } : { color: 'blue' }
-          }
+          to="space-travlers/"
+          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
         >
           Rockets
         </NavLink>
         <NavLink
           className="Nav-Item"
-          to="/missions"
-          style={({ isActive }) =>
-            isActive ? { color: 'black' } : { color: 'blue' }
-          }
+          to="space-travlers/missions"
+          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
         >
           Missions
         </NavLink>
         <h1>|</h1>
         <NavLink
           className="Nav-Item"
-          to="/profile"
-          style={({ isActive }) =>
-            isActive ? { color: 'black' } : { color: 'blue' }
-          }
+          to="space-travlers/profile"
+          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
         >
           My Profile
         </NavLink>
