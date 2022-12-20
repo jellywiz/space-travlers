@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './RocketsCSS.css';
+
 const Rocket = ({
   id, rocketName, description, images,
 }) => (
-  <div>
+  <div className="rocket-data" key={id}>
     <div>
-      {id}
-      <hr />
+      <picture>
+        <img src={images[0]} alt={rocketName} className="image" />
+      </picture>
     </div>
-    <div>
-      {rocketName}
-      <hr />
+    <div className="description">
+      <div className="rocket-name">
+        <p className="bird-name">
+          {rocketName}
+        </p>
+      </div>
+      <div className="rocket-description">
+        <p>
+          {description}
+        </p>
+      </div>
+      <div className="reserve-action">
+        <button type="button" className="btnReservation">
+          Reserve Rocket
+        </button>
+      </div>
     </div>
-    <div>{description}</div>
-    <div><img src={images[0]} alt={rocketName} /></div>
   </div>
 );
 
