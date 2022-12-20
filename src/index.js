@@ -1,17 +1,18 @@
-/* eslint-disable comma-dangle */
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import store from './Redux/configureStore';
+import store from './Redux/configureStore';
 import './index.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    {/* <Provider store={store}> */}
-    <App />
-    {/* </Provider> */}
-  </Router>
+  <StrictMode>
+    <Router>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Router>
+  </StrictMode>,
 );
