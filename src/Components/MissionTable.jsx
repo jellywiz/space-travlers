@@ -35,7 +35,7 @@ export default function MissionTable() {
             mName="Even"
             key={mission.mission_id}
             id={mission.mission_id}
-            name={mission.mission_name}
+            name={mission.missionName}
             desc={mission.description}
           />
         ) : (
@@ -43,7 +43,7 @@ export default function MissionTable() {
             mName="Odd"
             key={mission.mission_id}
             id={mission.mission_id}
-            name={mission.mission_name}
+            name={mission.missionName}
             desc={mission.description}
           />
         )))}
