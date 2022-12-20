@@ -1,7 +1,14 @@
+.rocket-container {
+  padding: 3rem 5rem;
+}
+
+.space-below {
+  margin: 10px 0;
+}
+
 .rocket-data {
   display: flex;
   flex-direction: row;
-  margin: 10px 20px;
 }
 
 .image {
