@@ -1,0 +1,25 @@
+.rocket-container-div {
+  width: 50%;
+  text-align: left;
+}
+
+.rocket-container-div > h3 {
+  font-size: x-large;
+}
+
+.rocket-container-div-ins {
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.rocket {
+  width: 92%;
+  border-bottom: 1px solid gray;
+  padding: 2rem;
+}
+
+.rocket:hover {
+  background-color: aqua;
+  font-weight: 600;
+  cursor: pointer;
+}

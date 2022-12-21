@@ -1,0 +1,25 @@
+.container {
+  width: 50%;
+  text-align: left;
+}
+
+.container > h3 {
+  font-size: x-large;
+}
+
+.missionsContainer {
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.mission {
+  padding: 2rem;
+  border: 1px solid gray;
+  text-align: left;
+}
+
+.mission:hover {
+  background-color: aqua;
+  font-weight: 600;
+  cursor: pointer;
+}

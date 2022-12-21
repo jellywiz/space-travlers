@@ -1,0 +1,17 @@
+.Table {
+  padding: 3rem 5rem;
+}
+
+.Table-Header {
+  font-weight: 600;
+  border: 1px solid #f2f2f2;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.Header-Item {
+  text-justify: inter-word;
+  text-align: justify;
+  border: 1px solid #f2f2f2;
+  padding: 0.5rem 1rem;
+}
