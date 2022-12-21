@@ -5,9 +5,11 @@
 .missionsContainer {
   border-radius: 6px;
   border: 1px solid gray;
+  justify-content: left;
 }
 
 .mission {
   padding: 2rem;
   border: 1px solid gray;
+  text-align: left;
 }
