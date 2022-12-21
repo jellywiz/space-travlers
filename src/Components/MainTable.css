@@ -10,14 +10,51 @@
 
 .justify {
   text-justify: inter-word;
-  text-align: left;
+  text-align: justify;
   padding: 0.8rem;
 }
 
+.mission-buttons {
+  padding: 1rem;
+  width: 12%;
+}
+
+.status {
+  width: 15%;
+}
+
 .Active-Member {
-  background-color: #ddebe3;
+  color: #185d28;
+  border: 1px solid #2fbb50;
+  border-radius: 0.5rem;
+  background-color: #e9f7ef;
+  box-shadow: 0 0 0 0.2rem rgba(47, 188, 80, 0.25);
+  padding: 0.5rem;
 }
 
 .Inactive-Member {
-  background-color: #ebcacd;
+  color: #8c222c;
+  border: 1px solid #d13141;
+  border-radius: 0.25rem;
+  background-color: #f8d7da;
+  box-shadow: 0 0 0 0.2rem rgba(238, 59, 76, 0.25);
+  padding: 0.5rem;
+}
+
+.Active-Member-Text {
+  color: #185d28;
+  border: 1px solid #2fbb50;
+  border-radius: 0.25rem;
+  background-color: #e9f7ef;
+  padding: 0.25rem;
+  margin: 10px;
+}
+
+.Inactive-Member-Text {
+  color: #8c222c;
+  border: 1px solid #d13141;
+  border-radius: 0.25rem;
+  background-color: #f8d7da;
+  padding: 0.25rem;
+  margin: 10px;
 }
