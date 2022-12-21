@@ -3,13 +3,18 @@ import PropTypes from 'prop-types';
 import './MainTable.css';
 
 export default function MainTable({
-  mName, name, desc, reserved, id, handleMission,
+  mName,
+  name,
+  desc,
+  reserved,
+  id,
+  handleMission,
 }) {
   return (
     <tr className={mName}>
       <td style={{ fontWeight: 'bold' }}>{name}</td>
       <td className="justify">{desc}</td>
-      <td>
+      <td className="status">
         {reserved ? (
           <h3 className="Active-Member-Text">Active Member</h3>
         ) : (
@@ -21,11 +26,12 @@ export default function MainTable({
           <button
             className="Inactive-Member"
             type="button"
-            onClick={() => { handleMission(id, reserved); }}
+            onClick={() => {
+              handleMission(id, reserved);
+            }}
           >
             Leave
           </button>
-
         ) : (
           <button
             className="Active-Member"

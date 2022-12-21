@@ -16,6 +16,11 @@
 
 .mission-buttons {
   padding: 1rem;
+  width: 12%;
+}
+
+.status {
+  width: 15%;
 }
 
 .Active-Member {
