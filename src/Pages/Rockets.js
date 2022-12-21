@@ -1,25 +1,27 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-
 import './RocketsCSS.css';
-import { addReservation } from '../Redux/Rockets/rocketsReducer';
 
 const Rocket = ({
-  id, rocketName, description, images, reserved,
+  id, rocketName, description, images, reserved, handleRocket,
 }) => {
-  const dispatch = useDispatch();
-  const reserveRocket = () => dispatch(addReservation(id));
   const button = () => {
     if (!reserved) {
       return (
-        <button type="button" className="btnReservation" onClick={reserveRocket}>
+        <button
+          type="button"
+          className="btnReservation"
+          onClick={() => {
+            handleRocket(id);
+          }}
+        >
           Reserve Rocket
         </button>
       );
     }
     return (
-      <button type="button" className="btnCancelReservation" onClick={reserveRocket}>
+      <button type="button" className="btnCancelReservation" onClick={() => handleRocket(id)}>
         Cancel Reservation
       </button>
     );

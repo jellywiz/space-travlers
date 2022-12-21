@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 50%;
   text-align: left;
 }
 
@@ -8,13 +8,18 @@
 }
 
 .missionsContainer {
-  border-radius: 6px;
   border: 1px solid gray;
-  justify-content: left;
+  border-radius: 6px;
 }
 
 .mission {
   padding: 2rem;
   border: 1px solid gray;
   text-align: left;
+}
+
+.mission:hover {
+  background-color: aqua;
+  font-weight: 600;
+  cursor: pointer;
 }
