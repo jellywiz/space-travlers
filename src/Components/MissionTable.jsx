@@ -1,23 +1,14 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import fetchMissions from '../Redux/Missions/MissionAPI';
+import { joinMission } from '../Redux/Missions/Missions';
 import MainTable from './MainTable';
 import './MissionTable.css';
 
 export default function MissionTable() {
-  const dispatch = useDispatch();
   const Missions = useSelector((state) => state.Missions);
-
-  useEffect(() => {
-    let ignore = false;
-    if (!ignore) {
-      dispatch(fetchMissions());
-    }
-    return () => {
-      ignore = true;
-    };
-  }, []);
+  const dispatch = useDispatch();
+  const handleMission = (id) => {
+    dispatch(joinMission(id));
+  };
 
   return (
     <table className="Table">
@@ -35,16 +26,20 @@ export default function MissionTable() {
             mName="Even"
             key={mission.mission_id}
             id={mission.mission_id}
-            name={mission.missionName}
+            name={mission.mission_name}
             desc={mission.description}
+            reserved={mission.reserved}
+            handleMission={handleMission}
           />
         ) : (
           <MainTable
             mName="Odd"
             key={mission.mission_id}
             id={mission.mission_id}
-            name={mission.missionName}
+            name={mission.mission_name}
             desc={mission.description}
+            reserved={mission.reserved}
+            handleMission={handleMission}
           />
         )))}
       </tbody>
