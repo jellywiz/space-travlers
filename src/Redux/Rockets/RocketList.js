@@ -1,18 +1,15 @@
-import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { addReservation } from './rocketsReducer';
 import Rocket from '../../Pages/Rockets';
-import fetchRockets from './fetchRocketsAPI';
 
 const ListRockets = () => {
   const rockets = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+  const handleRocket = (id) => {
+    dispatch(addReservation(id));
+  };
   return (
     <div className="rocket-container">
-      <hr className="space-below" />
       {
         rockets.map((rocket) => (
           <div key={rocket.id}>
@@ -22,6 +19,7 @@ const ListRockets = () => {
               description={rocket.description}
               images={rocket.images}
               reserved={rocket.reserved}
+              handleRocket={handleRocket}
             />
           </div>
         ))

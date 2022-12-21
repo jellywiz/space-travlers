@@ -30,7 +30,7 @@ export default function MainTable({
               handleMission(id, reserved);
             }}
           >
-            Leave
+            Leave Mission
           </button>
         ) : (
           <button
@@ -40,7 +40,7 @@ export default function MainTable({
               handleMission(id, reserved);
             }}
           >
-            Join
+            Join Mission
           </button>
         )}
       </td>
