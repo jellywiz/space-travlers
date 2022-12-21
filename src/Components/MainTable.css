@@ -32,6 +32,20 @@
   padding: 0.5rem;
 }
 
+
+.Active-Member:hover {
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #f5c236;
+  border-radius: 0.25rem;
+  background-color: #185d28;
+  box-shadow: 0 0 0 0.2rem #fff;
+  padding: 0.4rem;
+  width: 70px;
+  height: 35px;
+  cursor: pointer;
+}
+
 .Inactive-Member {
   color: #8c222c;
   border: 1px solid #d13141;
@@ -39,6 +53,19 @@
   background-color: #f8d7da;
   box-shadow: 0 0 0 0.2rem rgba(238, 59, 76, 0.25);
   padding: 0.5rem;
+}
+
+.Inactive-Member:hover {
+  color: #8c222c;
+  font-weight: bold;
+  border: 1px solid #f5c236;
+  border-radius: 0.25rem;
+  background-color: #f5df60;
+  box-shadow: 0 0 0 0.2rem #fff;
+  padding: 0.4rem;
+  width: 70px;
+  height: 35px;
+  cursor: pointer;
 }
 
 .Active-Member-Text {
