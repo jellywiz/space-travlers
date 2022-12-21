@@ -6,8 +6,8 @@ import './Profile.css';
 function Profile() {
   return (
     <div className="profile-container">
-      <MyRocket />
       <MyMissions />
+      <MyRocket />
     </div>
   );
 }
