@@ -12,7 +12,6 @@ const ListRockets = () => {
   }, [dispatch]);
   return (
     <div className="rocket-container">
-      <hr className="space-below" />
       {
         rockets.map((rocket) => (
           <div key={rocket.id}>

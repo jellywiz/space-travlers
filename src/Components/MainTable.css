@@ -30,6 +30,7 @@
   background-color: #e9f7ef;
   box-shadow: 0 0 0 0.2rem rgba(47, 188, 80, 0.25);
   padding: 0.5rem;
+  width: 120px;
 }
 
 .Active-Member:hover {
@@ -40,7 +41,6 @@
   background-color: #185d28;
   box-shadow: 0 0 0 0.2rem #fff;
   padding: 0.4rem;
-  width: 70px;
   height: 35px;
   cursor: pointer;
 }
@@ -52,6 +52,7 @@
   background-color: #f8d7da;
   box-shadow: 0 0 0 0.2rem rgba(238, 59, 76, 0.25);
   padding: 0.5rem;
+  width: 120px;
 }
 
 .Inactive-Member:hover {
@@ -62,7 +63,6 @@
   background-color: #f5df60;
   box-shadow: 0 0 0 0.2rem #fff;
   padding: 0.4rem;
-  width: 70px;
   height: 35px;
   cursor: pointer;
 }
