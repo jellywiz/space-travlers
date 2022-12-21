@@ -14,14 +14,14 @@ function Navbar() {
         <NavLink
           className="Nav-Item"
           to="space-travlers/"
-          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
+          style={({ isActive }) => (isActive ? { textDecoration: 'underline', color: 'blue' } : { color: 'blue' })}
         >
           Rockets
         </NavLink>
         <NavLink
           className="Nav-Item"
           to="space-travlers/missions"
-          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
+          style={({ isActive }) => (isActive ? { textDecoration: 'underline', color: 'blue' } : { color: 'blue' })}
         >
           Missions
         </NavLink>
@@ -29,7 +29,7 @@ function Navbar() {
         <NavLink
           className="Nav-Item"
           to="space-travlers/profile"
-          style={({ isActive }) => (isActive ? { color: 'black' } : { color: 'blue' })}
+          style={({ isActive }) => (isActive ? { textDecoration: 'underline', color: 'blue' } : { color: 'blue' })}
         >
           My Profile
         </NavLink>

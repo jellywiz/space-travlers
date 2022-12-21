@@ -32,5 +32,6 @@
 }
 
 .Nav-Item:active {
-  color: black;
+  color: blue;
+  text-decoration: underline;
 }
