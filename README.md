@@ -133,7 +133,7 @@ You can deploy this project using: `npm run deploy`
 - LinkedIn: [@Muzaffer Dler](https://www.linkedin.com/in/muzaffer-dler-473484205/)
 - Twitter: [@JellyWiz](https://twitter.com/Dark_JellyWiz)
 
-👤 **Muzaffer Dler**
+👤 **Emmanuel Mhango**
 
 - GitHub: [@Emmanuel Mhango](https://github.com/emmanuellmhango)
 - LinkedIn: [@Emmanuel Mhango](https://www.linkedin.com/in/emmanuellmhango/)
